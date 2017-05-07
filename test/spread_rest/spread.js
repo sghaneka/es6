@@ -7,6 +7,7 @@ describe('Spread Tests', function() {
             return a + b;
         }
 
+        // this will spread an array into individual arguments, so that we can call a function
         let data = [1, 4];
         let result = myFunction(...data);
 
