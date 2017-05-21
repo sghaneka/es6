@@ -14,6 +14,7 @@ describe('Iterables', function() {
         assert.equal(10, sum);
 
         // for in
+        // you get the key in the collection
         sum = 0;
         for(let i in numbers){
             sum += numbers[i];
@@ -32,6 +33,7 @@ describe('Iterables', function() {
         // assert.equal(10, sum);
 
         // for of
+        // you get the value at the point
         sum = 0;
         for (let n of numbers){
             sum += n;
