@@ -28,6 +28,34 @@ describe('Destructure Tests', function() {
 
         assert.equal("Scott", f);
         assert.equal("OdeToCode", t);
+
+        let { firstName, twitter } = doWork();
+
+        assert.equal("Scott", firstName);
+        assert.equal("OdeToCode", twitter);
+
+        var pos = {
+            coords:  {
+                latitude: 32,
+                longitude: 42
+            },
+            name: "Tim"
+        }
+
+        function process(oldway){
+            console.log(oldway.coords.latitude);
+            console.log(oldway.coords.longitude);
+
+        }
+
+        function processNew({coords, name}){
+            console.log(coords.latitude);
+            console.log(name);
+        }
+
+        process(pos);
+        console.log('new way.....');
+        processNew(pos);
      
     });
   });
