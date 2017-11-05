@@ -3,6 +3,8 @@ describe('Spread Tests', function() {
   describe('spread', function() {
     it('rest parameters', function() {
 
+        // gather the rest of the arguments to the function!
+        
         // rest parameter is always the last parameter to the function
         // syntax ...param
         // the rest param will the array

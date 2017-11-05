@@ -15,5 +15,16 @@ describe('Spread Tests', function() {
 
 
     });
+
+
+    it('spread with array', function() {
+
+      var x = Array(5);
+      // let's init the array...
+      var results = [...Array(5)].map( (n, i) => ({ item: i  }));
+      console.log(results);
+      assert.equal(5, 5);
+    });
+
   });
 });

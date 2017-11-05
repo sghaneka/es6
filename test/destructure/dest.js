@@ -1,7 +1,7 @@
 var assert = require('assert');
 describe('Destructure Tests', function() {
   describe('example 1', function() {
-    it('can destructure arrays', function() {
+    it('destructure arrays', function() {
 
         var doWork = function(){
             return [1, 3, 2];
@@ -11,6 +11,13 @@ describe('Destructure Tests', function() {
 
         assert.equal(1, x);
         assert.equal(3, y);
+
+        let star = Array(5);
+
+        var tmp;
+        tmp = [...Array(5)];
+
+        console.log(tmp);
      
     });
 
